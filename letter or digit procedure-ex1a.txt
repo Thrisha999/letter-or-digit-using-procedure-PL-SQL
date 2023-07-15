@@ -1,0 +1,10 @@
+create or replace procedure letter_digit(n char)
+is 
+begin
+if(n>='A' and n<='Z') or (n>='a' and n<='z') then
+	dbms_output.put_line(n||'is a letter');
+else 
+	dbms_output.put_line(n||'is a digit');
+end if;
+end;
+/
